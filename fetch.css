@@ -1,0 +1,61 @@
+body {
+	width: 80%;
+	margin: auto;
+	font-size:32px;
+	line-height: 40px;
+font-family: Open Sans, sans-serif;
+text-align: center;
+}
+
+html { 
+	background-color:red;
+}
+}
+h1 {
+	font-size: 48px;
+	text-align: center;
+	font-family: Open Sans, sans-serif;
+}
+
+pre {
+	font-size: 24px;
+font-family: Open Sans, sans-serif;
+}
+
+div.event {
+	padding:50px;
+	
+
+* { box-sizing: border-box; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 50%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+
+.carousel-cell.is-selected {
+  background: red;
+}
+
+@media screen and ( min-width: 768px ) {
+  /* half-width cells for larger devices */
+  .carousel-cell { width: 50%; }
