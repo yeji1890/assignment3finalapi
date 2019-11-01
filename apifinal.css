@@ -1,0 +1,261 @@
+body {
+	width: 100%;
+	margin: auto;
+	font-size:24px;
+	line-height: 40px;
+font-family: Open Sans, sans-serif;
+text-align: center;
+color:white;
+}
+
+html { 
+	background-color: black;
+}
+}
+h1 {
+	font-size: 18px;
+	text-align: center;
+	font-family: Open Sans, sans-serif;
+}
+
+pre {
+	font-size: 24px;
+font-family: Open Sans, sans-serif;
+}
+
+div.event {
+  
+  width: 50%;
+  height: 200px;
+  margin: 20px;
+  background-color: #3E3A39;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+
+}
+
+#signout_button {
+  cursor: pointer;
+  // display: block;
+  font-size:16px;
+  line-height: 30px;
+  max-width: 80px; 
+  position: fixed;
+  right:150px;
+  text-decoration: none;
+  width: 100%; 
+  border-radius: 5px;
+   background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+
+
+#authorize_button {
+	 cursor: pointer;
+  // display: block;
+  font-size:16px;
+  line-height: 30px;
+  max-width: 80px; 
+  position: fixed;
+  right:150px;
+  text-decoration: none;
+  width: 100%; 
+  border-radius: 5px;
+   background-color: black;
+  color: white;
+  border: 2px solid white;
+
+}
+
+
+
+
+#content {
+	width:80%;
+	margin: 0 auto;
+}
+
+
+.carousel-cell.is-selected {
+  background: #E71996;
+}
+
+* { box-sizing: border-box; }
+
+p {
+  text-align: center;
+  font-size: 3em;
+  margin: 20px 20 20px 20;
+  line-height: 30px;
+  color: #FF1177;
+  font-family: Monoton;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+p:hover {
+  color: white;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+#container {
+  width: 500px;
+  margin: auto;
+}
+
+
+
+@media screen and ( min-width: 768px ) {
+
+
+  /* half-width cells for larger devices */
+  .carousel-cell { width: 50%; }
+
+
+.logo {
+  font-family: Open Sans, sans-serif;
+  font-size: 48px;
+}
+.logo > * {
+  margin-left: -6px;
+  font-weight: 700;
+  display: inline-block;
+  animation-name: appear;
+  animation-duration: .01s;
+  animation-fill-mode: both;
+}
+.logo > *:nth-of-type(1) {
+  animation-delay: 1s
+}
+.logo > *:nth-of-type(2) {
+  animation-delay: 1.4s
+}
+.logo > *:nth-of-type(3) {
+  animation-delay: 1.7s
+}
+.logo > *:nth-of-type(4) {
+  animation-delay: 2s
+}
+.logo > *:nth-of-type(5) {
+  animation-delay: 2.1s
+}
+
+.logo > *:nth-of-type(6) {
+  animation-delay: 2.2s
+}
+.logo > *:nth-of-type(7) {
+  animation-delay: 2.3s
+}
+.logo > *:nth-of-type(8) {
+  animation-delay: 2.4s
+}
+.logo > *:nth-of-type(9) {
+  animation-delay: 2.5s
+}
+.logo > *:nth-of-type(10) {
+  animation-delay: 2.6s
+}
+.logo > *:nth-of-type(11) {
+  animation-delay: 2.7s
+}
+.logo > *:nth-of-type(12) {
+  animation-delay: 2.8s
+}
+.logo > *:nth-of-type(13) {
+  animation-delay: 2.9s
+}
+.logo > *:nth-of-type(14) {
+  animation-delay: 3.0s
+}
+
+
+@keyframes appear {
+  from {
+    font-size: 0em;
+  }
+  to {
+    font-size: 1em;
+  }
+}
+.blink {
+  font-size: 1.5em;
+  font-weight: 400;
+  display: inline-block;
+  visibility: visible;
+  width: auto;
+  animation-name: flash;
+  animation-duration: .8s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: -50px;
+
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+
+
+
+/* smaller, dark, rounded square */
+.flickity-button {
+  background: white;
+}
+.flickity-button:hover {
+  background: black;
+}
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: black;
+}
+
+.flickity-button-icon:hover {
+  fill: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -40px;
+}
+.flickity-prev-next-button.next {
+  right: -40px;
+}
